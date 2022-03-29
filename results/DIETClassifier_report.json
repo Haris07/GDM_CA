@@ -1,0 +1,34 @@
+{
+  "weight_entity": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 10,
+    "confused_with": {}
+  },
+  "trimester_entity": {
+    "precision": 1.0,
+    "recall": 0.2857142857142857,
+    "f1-score": 0.4444444444444445,
+    "support": 7,
+    "confused_with": {}
+  },
+  "micro avg": {
+    "precision": 1.0,
+    "recall": 0.7058823529411765,
+    "f1-score": 0.8275862068965517,
+    "support": 17
+  },
+  "macro avg": {
+    "precision": 1.0,
+    "recall": 0.6428571428571428,
+    "f1-score": 0.7222222222222222,
+    "support": 17
+  },
+  "weighted avg": {
+    "precision": 1.0,
+    "recall": 0.7058823529411765,
+    "f1-score": 0.7712418300653594,
+    "support": 17
+  }
+}

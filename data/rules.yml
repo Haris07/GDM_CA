@@ -1,0 +1,28 @@
+version: "2.0"
+rules:
+ - rule: activate user_info form
+   steps:
+   - intent: query
+   - action: user_info_form
+   - active_loop: user_info_form
+   - slot_was_set:
+      - requested_slot: weight
+      - requested_slot: trimester
+
+ - rule: submit user_info form
+   condition:
+   - active_loop: user_info_form
+   steps:
+   - action: user_info_form
+   - active_loop: null
+   - slot_was_set:
+      - requested_slot: null
+   - action: action_calculate_dose
+
+
+ - rule: out-of-scope
+   steps:
+   - intent: out_of_scope
+   - action: action_restart
+
+

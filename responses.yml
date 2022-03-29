@@ -1,0 +1,31 @@
+responses:
+  utter_greet:
+  - text: |
+      Hello, this is a bot for calculating insulin dosage for gestational diabetes patients! 
+  - text: |
+      Hi, this is a bot for calculating insulin dosage for gestational diabetes patients!
+  - text: |
+      Hello and welcome to gestational diabetes insuling dose calculator
+  utter_ask_weight:
+  - text: |
+      What is your weight in kilograms?    
+  - text: |
+      Please provide your weight in kilograms?
+  - text: |
+      Please input your weight in kilograms?
+  utter_ask_trimester:
+  - text: |
+      What is your current trimester?    
+  - text: |
+      Please provide your trimester?
+  - text: |
+      Please input your current trimester?
+  utter_goodbye:
+  - text: | 
+      Bye
+  - text: | 
+      Goodbye!
+  - text: | 
+      bye see you later 
+  - text: | 
+      bye, hopefully you got answers to your queries, see you

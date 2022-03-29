@@ -1,0 +1,78 @@
+version: "2.0"
+nlu:
+- intent: query_insulin_type
+  examples: |
+    - what is [basal](insulin_type)  insulin
+- intent: out_of_scope
+  examples: |
+    - I want to order food
+    - Waiting to get my order I am in first queue
+    - Who's the US President?
+    - I have 30 euros
+    - I have 30 pounds
+    - my age is 45
+- intent: query
+  examples: |
+    - what are the steps of calculating insulin dose
+    - Can you calculate my insulin dose?
+    - please tell me about how much insulin I need?
+    - is this an insulin dose calculator?
+    - Can I calculate my insulin dose?
+    - How much insulin dose I need?
+- intent: inform_trimester
+  examples: |
+    - its [second](trimester_entity)
+    - [2nd](trimester_entity) it is
+    - [1st](trimester_entity)
+    - [second](trimester_entity)
+    - its [3rd](trimester_entity)
+    - [first](trimester_entity)
+- intent: inform_weight
+  examples: |
+    - its [18](weight_entity) kgs!
+    - my weight is [78](weight_entity) kilograms
+    - oh it is [36](weight_entity) kg
+    - probably I am [76](weight_entity)
+    - I am [78](weight_entity)
+    - [45](weight_entity)
+    - I am not fully sure but around [29](weight_entity)
+    - My weight is [45](weight_entity) kg
+- intent: greet
+  examples: |
+    - hey there
+    - hi Mister
+    - good afternoon
+    - hey bot
+    - hi folks
+    - greetings
+    - hi there
+    - hello everybody
+    - hello robot
+    - hi pal!
+    - good morning
+    - hi again
+    - hey
+    - hello is anybody there
+    - hey hello
+    - Hi chatbot
+- intent: bye
+  examples: |
+    - Goodbye friend
+    - bye!
+    - gotta go
+    - see you later alligator
+    - goodbye bot
+    - i'm off
+    - goodbye
+    - goodnight
+    - see you
+    - have a nice day
+    - bye now
+    - we'll speak soon
+    - see you around
+    - bye for now
+    - bye
+    - catch you later
+    - i'm done
+    - going to see you later
+    - bye chatbot

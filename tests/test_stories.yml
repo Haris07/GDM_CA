@@ -1,0 +1,34 @@
+stories:
+- story: greet and query
+  steps:
+    - user: |
+        hey
+    - intent: greet
+    - action: utter_greet
+    - user: |
+        I want to calculate my insulin dosage
+    - intent: query
+    - action: user_info_form
+    - active_loop: user_info_form
+
+- story: greet and bye
+  steps:
+    - user: |
+        hi
+    - intent: greet
+    - action: utter_greet
+    - user: |
+        bye
+    - intent: bye
+    - action: utter_goodbye
+
+- story: greet and bye
+  steps:
+    - user: |
+        hi
+    - intent: greet
+    - action: utter_greet
+    - user: |
+        bye
+    - intent: bye
+    - action: utter_goodbye

@@ -1,0 +1,102 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - good morning
+    - good evening
+    - hey there
+    - good afternoon
+    - hey hello
+    - hey bot
+    - Hi chatbot
+    - Hello bot
+    - hi again
+    - hi folks
+    - hi Mister
+    - hi pal!
+    - hi there
+    - greetings
+    - hello everybody
+    - hello is anybody there
+    - hello robot
+
+- intent: query
+  examples: |
+    - I want to calculate my insulin dose
+    - Can I calculate my insulin dose?
+    - How much insulin dose I need?
+    - Can you calculate my insulin dose?
+    - is this an insulin dose calculator?
+    - please tell me about how much insulin I need?
+    - what are the steps of calculating insulin dose
+    - so what?
+    - what should I do?
+    - what can i do?
+
+- intent: inform_weight
+  examples: |
+    - My weight is [45](weight_entity) kg
+    - [45](weight_entity)
+    - it is [35](weight_entity)
+    - my weight is [78](weight_entity) kilograms
+    - [48](weight_entity) kgs
+    - its [18](weight_entity) kgs!
+    - oh it is [36](weight_entity) kg
+    - I am [78](weight_entity)
+    - probably I am [76](weight_entity)
+    - I am not fully sure but around [29](weight_entity)
+
+- intent: inform_trimester
+  examples: |
+    - [1st](trimester_entity)
+    - [first](trimester_entity)
+    - its [second](trimester_entity)
+    - I am in my [third](trimester_entity) trimester
+    - [2nd](trimester_entity) it is
+    - its [3rd](trimester_entity)
+    - [second](trimester_entity)
+
+- intent: out_of_scope
+  examples: |
+    - I want to order food
+    - What is 2 + 2?
+    - Who's the US President?
+    - I have 30 euros
+    - Waiting to get my order I am in first queue
+
+- intent: query_insulin_type
+  examples: |
+    - what is [basal](insulin_type)  insulin
+    - what is [bolus](insulin_type) insulin 
+
+  # examples: |
+  #   - Can I calculate insulin regimen?
+
+- intent: bye
+  examples: |
+    - bye
+    - goodbye
+    - see you around
+    - see you later
+    - talk to you later
+    - see you
+    - bye! 
+    - bye chatbot
+    - goodbye bot
+    - gotta go
+    - going to see you later
+    - bye bot
+    - Goodbye friend
+    - bye now
+    - bye for now
+    - catch you later
+    - See you
+    - goodnight
+    - have a nice day
+    - i'm off
+    - see you later alligator
+    - we'll speak soon
+    - i'm done

@@ -1,0 +1,54 @@
+{
+  "inform_trimester": {
+    "precision": 1.0,
+    "recall": 0.8571428571428571,
+    "f1-score": 0.923076923076923,
+    "support": 7,
+    "confused_with": {
+      "query": 1
+    }
+  },
+  "query": {
+    "precision": 0.8571428571428571,
+    "recall": 1.0,
+    "f1-score": 0.923076923076923,
+    "support": 6,
+    "confused_with": {}
+  },
+  "bye": {
+    "precision": 0.9583333333333334,
+    "recall": 1.0,
+    "f1-score": 0.9787234042553191,
+    "support": 23,
+    "confused_with": {}
+  },
+  "greet": {
+    "precision": 1.0,
+    "recall": 0.95,
+    "f1-score": 0.9743589743589743,
+    "support": 20,
+    "confused_with": {
+      "bye": 1
+    }
+  },
+  "inform_weight": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 10,
+    "confused_with": {}
+  },
+  "accuracy": 0.9696969696969697,
+  "macro avg": {
+    "precision": 0.9630952380952381,
+    "recall": 0.9614285714285714,
+    "f1-score": 0.9598472449536279,
+    "support": 66
+  },
+  "weighted avg": {
+    "precision": 0.972492784992785,
+    "recall": 0.9696969696969697,
+    "f1-score": 0.9696639058341185,
+    "support": 66
+  }
+}

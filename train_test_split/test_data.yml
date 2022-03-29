@@ -1,0 +1,34 @@
+version: "2.0"
+nlu:
+- intent: inslulin_regimen
+  examples: |
+    - Can I calculate insulin regimen?
+- intent: query_insulin_type
+  examples: |
+    - what is [bolus](insulin_type) insulin
+- intent: out_of_scope
+  examples: |
+    - What is 2 + 2?
+- intent: query
+  examples: |
+    - I want to calculate my insulin dose
+- intent: inform_trimester
+  examples: |
+    - I am in my [third](trimester_entity) trimester
+- intent: inform_weight
+  examples: |
+    - it is [35](weight_entity)
+    - [48](weight_entity) kgs
+    - its my [4th] trimester
+- intent: greet
+  examples: |
+    - Hello bot
+    - hi
+    - good evening
+    - hello
+- intent: bye
+  examples: |
+    - talk to you later
+    - bye bot
+    - see you later
+    - See you

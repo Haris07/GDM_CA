@@ -1,0 +1,15 @@
+stories:
+- story: greet and subscribe
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: query
+    - action: user_info_form
+    - active_loop: user_info_form
+
+- story: greet and bye
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: bye
+    - action: utter_goodbye

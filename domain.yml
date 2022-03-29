@@ -1,0 +1,107 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- inquire:
+    use_entities: true
+- query:
+    use_entities: true
+- inform_weight:
+    use_entities: true
+- inform_trimester:
+    use_entities: true
+- bye:
+    use_entities: true
+- out_of_scope:
+    use_entities: false
+- query_insulin_type:
+    use_entities: false
+- inslulin_regimen:
+    use_entities: false
+
+entities:
+- weight_entity
+- trimester_entity
+slots:
+  dose:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  weight:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  trimester:
+    type: rasa.shared.core.slots.CategoricalSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+    values:
+    - 1st
+    - 2nd
+    - 3rd
+    - first
+    - second
+    - third
+  requested_slot:
+    type: rasa.shared.core.slots.UnfeaturizedSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+responses:
+  utter_greet:
+  - text: |
+      Hello, this is a bot for calculating insulin dosage for gestational diabetes patients! 
+  - text: |
+      Hi, this is a bot for calculating insulin dosage for gestational diabetes patients!
+  - text: |
+      Hello and welcome to gestational diabetes insulin dose calculator
+  utter_ask_weight:
+  - text: |
+      What is your weight in kilograms?    
+  - text: |
+      Please provide your weight in kilograms?
+  - text: |
+      Please input your weight in kilograms?
+  utter_ask_trimester:
+  - text: |
+      What is your current trimester?    
+  - text: |
+      Please provide your trimester?
+  - text: |
+      Please input your current trimester?
+  utter_goodbye:
+  - text: |
+      Bye
+  - text: |
+      Goodbye!
+  - text: |
+      bye see you later 
+  - text: |
+      bye, hopefully you got answers to your queries, see you
+  utter_user_dose:
+  - text: |
+      Your total insulin dose for weight {weight} kilograms and {trimester} trimester is {dose} 
+  utter_out_of_scope:
+  - text: Sorry, I can't handle that request.
+  utter_restart:
+  - text: oops bot restarted
+actions:
+- action_calculate_dose
+- action_restart
+# - validate_user_info_form
+forms:
+  user_info_form:
+    weight:
+    - entity: weight_entity
+      type: from_entity
+    trimester:
+    - entity: trimester_entity
+      type: from_entity

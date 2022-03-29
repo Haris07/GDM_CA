@@ -1,0 +1,45 @@
+version: "2.0"
+stories:
+- story: greet and calculate
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: query
+    - action: user_info_form
+    - active_loop: user_info_form
+
+- story: greet and bye
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: bye
+    - action: utter_goodbye
+
+# - story: greet and input trimester
+#   steps:
+#     - intent: greet
+#     - action: utter_greet
+#     - intent: inform_trimester
+#     - action: user_info_form
+#     - active_loop: user_info_form
+
+# - story: greet and input weight
+#   steps:
+#     - intent: greet
+#     - action: utter_greet
+#     - intent: inform_weight
+#     - action: user_info_form
+#     - active_loop: user_info_form
+
+# - story: input weight
+#   steps:
+#     - intent: inform_weight
+#     - action: user_info_form
+#     - active_loop: user_info_form
+
+# - story: input trimester
+#   steps:
+#     - intent: inform_weight
+#     - action: user_info_form
+#     - active_loop: user_info_form
+

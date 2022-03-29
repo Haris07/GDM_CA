@@ -1,0 +1,8 @@
+forms:
+  user_info_form:
+    weight:
+    - type: from_entity
+      entity: weight_entity
+    trimester:
+    - type: from_entity
+      entity: trimester_entity

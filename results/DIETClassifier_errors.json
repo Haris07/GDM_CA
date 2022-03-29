@@ -1,0 +1,62 @@
+[
+  {
+    "text": "2nd it is",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "2nd",
+        "entity": "trimester_entity"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "first",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "first",
+        "entity": "trimester_entity"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "its 3rd",
+    "entities": [
+      {
+        "start": 4,
+        "end": 7,
+        "value": "3rd",
+        "entity": "trimester_entity"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "1st",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "1st",
+        "entity": "trimester_entity"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I am in my third trimester",
+    "entities": [
+      {
+        "start": 11,
+        "end": 16,
+        "value": "third",
+        "entity": "trimester_entity"
+      }
+    ],
+    "predicted_entities": []
+  }
+]
